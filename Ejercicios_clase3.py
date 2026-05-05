@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Cadenas(STRING).
 
 #longitud: lend()
@@ -38,3 +39,6 @@ print(texto_nuevo)
 #[Desde:Hasta]
 texto_nuevo = texto[7:2]
 print(texto_nuevo)
+=======
+print("extañaba volver a escribir codigo ")
+>>>>>>> 2ccb4e4884e28977a15a440b863e45517b1b510c
