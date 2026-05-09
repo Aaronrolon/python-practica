@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Cadenas(STRING).
 
 #longitud: lend()
@@ -37,8 +36,33 @@ print(texto_nuevo)
 texto_nuevo = texto[:19]
 print(texto_nuevo)
 #[Desde:Hasta]
-texto_nuevo = texto[7:2]
+texto_nuevo = texto[7::2]
 print(texto_nuevo)
-=======
-print("extañaba volver a escribir codigo ")
->>>>>>> 2ccb4e4884e28977a15a440b863e45517b1b510c
+
+"""Ejercitación.
+Escribir un programa permita ingresar el total de prendas de una compra y muestre las
+opciones de pago al cliente
+Si comprá 1 unidad, puede pagar en efectivo
+Si comprá 5 unidad, puede pagar con débito automático
+Si comprá 20 unidades, puede pagar en 3 cuotas sin interés.
+Si comprá 50 unidades, puede pagar en 6 cuotas sin interés.
+Si comprá cualquier otra cantidad de prendas puede pagar con mercado pago
+Si paga con tarjeta de crédito calcular y mostrar las cuotas a pagar según corresponda,
+cada prenda vale $200, devuelva valores enteros(int)
+Ejemplo: gasto total: 50
+ “ud puede pagar en 6 cuotas de $ 1666”"""
+
+prendas = int(input("Ingrese la cantidad de prendas que compro: "))
+gastos = prendas * 200
+
+match prendas :
+    case 1:
+        print("Puede abonar en efectivo")
+    case 5:
+        print("Puede abonar con debito")
+    case 20:
+        print(f"Puede abonar con tarjeta de credito en 3 cuotas de {int(gastos / 3)}")
+    case 50:
+        print(f"Puede abonar con tarjeta de credito en 6 cuotas de {int(gastos / 6)}")
+    case _:
+        print("Puede abonar con Mercado Pago")
